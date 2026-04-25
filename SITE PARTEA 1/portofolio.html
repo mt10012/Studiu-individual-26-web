@@ -24,7 +24,7 @@
       <li><a href="/SITE PARTEA 1/portofolio.html" class="activ">Portofoliu</a></li>
       <li><a href="/SITE PARTEA 1/blog.html">Blog</a></li>
     </ul>
-    <a href="/contact.html" class="buton buton-principal buton-contact-nav">Contact</a>
+    <a href="#contact-overlay" class="buton buton-principal buton-contact-nav">Contact</a>
   </div>
 </nav>
 
@@ -42,7 +42,7 @@
           <h1>Ce am <span class="accent">construit.</span></h1>
           <p class="descriere-hero">De la infrastructuri cloud enterprise la sisteme de securitate critice și platforme AI — iată o selecție din proiectele care au redefinit așteptările clienților noștri din România și Europa.</p>
           <div class="butoane-hero">
-            <a href="/contact.html" class="buton buton-principal">Discută proiectul tău ↗</a>
+            <a href="#contact-overlay" class="buton buton-principal">Discută proiectul tău ↗</a>
             <a href="#proiecte" class="buton buton-contur">Vezi proiectele</a>
           </div>
         </div>
@@ -100,11 +100,11 @@
         <article class="card-proiect featured">
           <div class="vizual-proiect h-280">
             <map name="harta-analytics">
-              <area shape="rect" coords="0,0,300,280" href="/proiecte/retail-analytics.html" alt="Grafic vânzări">
-              <area shape="rect" coords="300,0,600,280" href="/proiecte/retail-analytics.html" alt="Dashboard principal">
-              <area shape="rect" coords="600,0,900,280" href="/proiecte/retail-analytics.html" alt="Metrici live">
+              <area shape="rect" coords="0,0,300,280" href="#" alt="Grafic vânzări">
+              <area shape="rect" coords="300,0,600,280" href="#" alt="Dashboard principal">
+              <area shape="rect" coords="600,0,900,280" href="#" alt="Metrici live">
             </map>
-            <img src="/img/8.jpg" 
+            <img src="/img/8.jpg" alt="Platformă Cloud Analytics pentru Retail Enterprise" loading="lazy">
             <div class="gradient-vizual"></div>
             <div class="insigna-proiect">
               <span class="badge-an">2023</span>
@@ -428,10 +428,35 @@
         <h2>Ai un proiect în minte?</h2>
         <p>Discută cu echipa noastră și află cum putem transforma ideea ta în realitate — rapid, sigur și scalabil.</p>
         <div class="butoane-banner-cta">
-          <a href="/contact.html" class="buton buton-alb">Solicită o consultație gratuită</a>
+          <a href="#contact-overlay" class="buton buton-alb">Solicită o consultație gratuită</a>
           <a href="tel:+37372100000" class="buton buton-contur">+373 721 000 000</a>
         </div>
       </div>
+    </div>    
+  </section>
+
+  <section id="contact-overlay" class="overlay-contact" aria-label="Contact rapid">
+    <a href="#" class="overlay-contact-fundal" aria-label="Închide overlay"></a>
+    <div class="overlay-contact-card" role="dialog" aria-modal="true" aria-labelledby="titlu-overlay-contact">
+      <a href="#" class="overlay-contact-inchide" aria-label="Închide">×</a>
+      <span class="eticheta-sectiune eticheta-albastra">Contact</span>
+      <h2 id="titlu-overlay-contact">Hai să discutăm proiectul tău</h2>
+      <p class="overlay-contact-subtitlu">Lasă-ne un mesaj și revenim în cel mai scurt timp cu o propunere clară și un plan de implementare.</p>
+      <form class="overlay-contact-form" action="#" method="post">
+        <label for="nume-contact">Nume complet</label>
+        <input id="nume-contact" name="nume" type="text" placeholder="Ex: Andrei Popescu" required>
+
+        <label for="email-contact">Email</label>
+        <input id="email-contact" name="email" type="email" placeholder="nume@companie.ro" required>
+
+        <label for="mesaj-contact">Mesaj</label>
+        <textarea id="mesaj-contact" name="mesaj" rows="4" placeholder="Spune-ne pe scurt ce vrei să construim"></textarea>
+
+        <div class="overlay-contact-actiuni">
+          <button type="submit" class="buton buton-principal">Trimite mesajul</button>
+          <a href="tel:+37372100000" class="buton buton-contur">Sună acum</a>
+        </div>
+      </form>
     </div>
   </section>
 
